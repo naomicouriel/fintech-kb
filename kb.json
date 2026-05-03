@@ -1,0 +1,43 @@
+{
+  "entities": [
+    {
+      "id": "bcra",
+      "type": "regulator",
+      "name": "Banco Central de la República Argentina",
+      "aliases": ["BCRA"]
+    },
+    {
+      "id": "uif",
+      "type": "regulator",
+      "name": "Unidad de Información Financiera",
+      "aliases": ["UIF"]
+    },
+    {
+      "id": "psp",
+      "type": "entity_class",
+      "name": "Proveedor de Servicios de Pago",
+      "aliases": ["PSP"],
+      "description": "Entidad que ofrece servicios de pago, sujeta a registro en el RPSP"
+    },
+    {
+      "id": "pspcp",
+      "type": "entity_class",
+      "name": "Proveedor de Servicios de Pago que ofrece Cuentas de Pago",
+      "aliases": ["PSPCP"],
+      "description": "Subtipo de PSP que ofrece cuentas de pago a clientes finales"
+    },
+    {
+      "id": "rpsp",
+      "type": "registry",
+      "name": "Registro de Proveedores de Servicios de Pago",
+      "aliases": ["RPSP"]
+    }
+  ],
+  "relations": [
+    {"subject": "psp", "predicate": "regulated_by", "object": "bcra"},
+    {"subject": "psp", "predicate": "must_register_in", "object": "rpsp"},
+    {"subject": "pspcp", "predicate": "is_subtype_of", "object": "psp"},
+    {"subject": "rpsp", "predicate": "managed_by", "object": "bcra"}
+  ],
+  "regulations": []
+}
