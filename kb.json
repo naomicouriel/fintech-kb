@@ -4,40 +4,467 @@
       "id": "bcra",
       "type": "regulator",
       "name": "Banco Central de la República Argentina",
-      "aliases": ["BCRA"]
+      "aliases": [
+        "BCRA"
+      ],
+      "description": null,
+      "source": "seed"
     },
     {
       "id": "uif",
       "type": "regulator",
       "name": "Unidad de Información Financiera",
-      "aliases": ["UIF"]
+      "aliases": [
+        "UIF"
+      ],
+      "description": null,
+      "source": "seed"
     },
     {
       "id": "psp",
       "type": "entity_class",
       "name": "Proveedor de Servicios de Pago",
-      "aliases": ["PSP"],
-      "description": "Entidad que ofrece servicios de pago, sujeta a registro en el RPSP"
+      "aliases": [
+        "PSP"
+      ],
+      "description": "Entidad que ofrece servicios de pago, sujeta a registro en el RPSP",
+      "source": "seed"
     },
     {
       "id": "pspcp",
       "type": "entity_class",
       "name": "Proveedor de Servicios de Pago que ofrece Cuentas de Pago",
-      "aliases": ["PSPCP"],
-      "description": "Subtipo de PSP que ofrece cuentas de pago a clientes finales"
+      "aliases": [
+        "PSPCP"
+      ],
+      "description": "Subtipo de PSP que ofrece cuentas de pago a clientes finales",
+      "source": "seed"
     },
     {
       "id": "rpsp",
       "type": "registry",
       "name": "Registro de Proveedores de Servicios de Pago",
-      "aliases": ["RPSP"]
+      "aliases": [
+        "RPSP"
+      ],
+      "description": null,
+      "source": "seed"
+    },
+    {
+      "id": "comision_nacional_de_valores",
+      "type": "regulator",
+      "name": "Comisión Nacional de Valores",
+      "aliases": [
+        "CNV"
+      ],
+      "description": "Argentine securities regulator; recognizes markets, clearinghouses and agents that cannot operate as PSP.",
+      "source": "com_a_8432"
+    },
+    {
+      "id": "superintendencia_de_seguros_de_la_nacion",
+      "type": "regulator",
+      "name": "Superintendencia de Seguros de la Nación",
+      "aliases": [
+        "SSN"
+      ],
+      "description": "Argentine insurance superintendence whose sanctions are considered for PSP eligibility.",
+      "source": "com_a_8432"
+    },
+    {
+      "id": "superintendencia_de_entidades_financieras_y_cambiarias",
+      "type": "regulator",
+      "name": "Superintendencia de Entidades Financieras y Cambiarias",
+      "aliases": [
+        "SEFYC"
+      ],
+      "description": "BCRA superintendence receiving documentation and assessing PSP inactivity and audit registration.",
+      "source": "com_a_8432"
+    },
+    {
+      "id": "comite_del_consejo_de_seguridad_de_la_organizacion_de_las_naciones_unidas",
+      "type": "regulator",
+      "name": "Comité del Consejo de Seguridad de la Organización de las Naciones Unidas",
+      "aliases": [],
+      "description": "UN Security Council Committee whose designations trigger sanctions and restrictive measures applicable to PSP shareholders/directors.",
+      "source": "com_a_8432"
+    },
+    {
+      "id": "pspcp_como_servicio",
+      "type": "entity_class",
+      "name": "PSPCP como Servicio",
+      "aliases": [],
+      "description": "PSPs that offer payment accounts -- and eventually interoperable digital wallet services -- to clients of a third party that takes the service, where clients use the accounts through a user interface provided by the third party and technologically integrated with the PSPCP.",
+      "source": "com_a_8432"
+    },
+    {
+      "id": "proveedores_de_servicios_de_pago_que_cumplen_la_funcion_de_iniciacion",
+      "type": "entity_class",
+      "name": "Proveedores de Servicios de Pago que cumplen la función de Iniciación",
+      "aliases": [],
+      "description": "PSPs performing the payment initiation function.",
+      "source": "com_a_8432"
+    },
+    {
+      "id": "redes_de_cajeros_automaticos",
+      "type": "entity_class",
+      "name": "Redes de Cajeros Automáticos",
+      "aliases": [],
+      "description": null,
+      "source": "com_a_8432"
+    },
+    {
+      "id": "redes_de_transferencias_electronicas_de_fondos",
+      "type": "entity_class",
+      "name": "Redes de Transferencias Electrónicas de Fondos",
+      "aliases": [],
+      "description": null,
+      "source": "com_a_8432"
+    },
+    {
+      "id": "administradores_de_esquemas_de_pago_de_transferencias_electronicas_de_fondos",
+      "type": "entity_class",
+      "name": "Administradores de Esquemas de Pago de Transferencias Electrónicas de Fondos",
+      "aliases": [],
+      "description": null,
+      "source": "com_a_8432"
+    },
+    {
+      "id": "aceptadores_de_pago_con_transferencia",
+      "type": "entity_class",
+      "name": "Aceptadores de Pago con Transferencia",
+      "aliases": [],
+      "description": null,
+      "source": "com_a_8432"
+    },
+    {
+      "id": "administradores_qr",
+      "type": "entity_class",
+      "name": "Administradores QR",
+      "aliases": [],
+      "description": null,
+      "source": "com_a_8432"
+    },
+    {
+      "id": "adquirentes_de_pagos_con_tarjeta",
+      "type": "entity_class",
+      "name": "Adquirentes de Pagos con Tarjeta",
+      "aliases": [],
+      "description": null,
+      "source": "com_a_8432"
+    },
+    {
+      "id": "agregadores_de_instrumentos_de_pago",
+      "type": "entity_class",
+      "name": "Agregadores de Instrumentos de Pago",
+      "aliases": [],
+      "description": null,
+      "source": "com_a_8432"
+    },
+    {
+      "id": "empresas_de_cobranza_extrabancaria_de_impuestos_y_o_servicios",
+      "type": "entity_class",
+      "name": "Empresas de Cobranza Extrabancaria de Impuestos y/o Servicios",
+      "aliases": [],
+      "description": null,
+      "source": "com_a_8432"
+    },
+    {
+      "id": "registro_publico_de_personas_y_entidades_vinculadas_a_actos_de_terrorismo_y_su_financiamiento",
+      "type": "registry",
+      "name": "Registro Público de Personas y Entidades vinculadas a actos de Terrorismo y su Financiamiento",
+      "aliases": [
+        "RePET"
+      ],
+      "description": "Public registry of persons and entities linked to terrorism and its financing.",
+      "source": "com_a_8432"
+    },
+    {
+      "id": "registro_nacional_de_reincidencia",
+      "type": "registry",
+      "name": "Registro Nacional de Reincidencia",
+      "aliases": [],
+      "description": "Argentine national criminal records registry that issues background certificates.",
+      "source": "com_a_8432"
+    },
+    {
+      "id": "registro_de_auditores",
+      "type": "registry",
+      "name": "Registro de Auditores",
+      "aliases": [],
+      "description": "Auditors registry maintained at the SEFYC.",
+      "source": "com_a_8432"
+    },
+    {
+      "id": "ley_general_de_sociedades_19_550",
+      "type": "regulation",
+      "name": "Ley General de Sociedades 19.550",
+      "aliases": [
+        "Ley 19.550"
+      ],
+      "description": "Argentine general companies law; foreign legal persons must comply with it to habitually exercise acts in Argentina.",
+      "source": "com_a_8432"
+    },
+    {
+      "id": "ley_de_entidades_financieras",
+      "type": "regulation",
+      "name": "Ley de Entidades Financieras",
+      "aliases": [],
+      "description": "Argentine financial institutions law; article 10 lists disqualifications applicable to PSP shareholders/directors.",
+      "source": "com_a_8432"
+    },
+    {
+      "id": "ley_de_regimen_penal_cambiario",
+      "type": "regulation",
+      "name": "Ley de Régimen Penal Cambiario",
+      "aliases": [],
+      "description": "Argentine foreign exchange criminal regime law.",
+      "source": "com_a_8432"
+    },
+    {
+      "id": "ley_25_506",
+      "type": "regulation",
+      "name": "Ley 25.506",
+      "aliases": [],
+      "description": "Argentine digital signature law applicable to the sworn statements required.",
+      "source": "com_a_8432"
+    },
+    {
+      "id": "texto_ordenado_sobre_proveedores_de_servicios_de_pago",
+      "type": "regulation",
+      "name": "Texto ordenado sobre Proveedores de Servicios de Pago",
+      "aliases": [],
+      "description": "BCRA consolidated text on Payment Service Providers, modified by this communication.",
+      "source": "com_a_8432"
+    },
+    {
+      "id": "texto_ordenado_sobre_sistema_nacional_de_pagos_servicios_de_pago",
+      "type": "regulation",
+      "name": "Texto ordenado sobre Sistema Nacional de Pagos - Servicios de Pago",
+      "aliases": [],
+      "description": "BCRA consolidated text on the National Payments System - Payment Services.",
+      "source": "com_a_8432"
+    },
+    {
+      "id": "texto_ordenado_sobre_proteccion_de_los_usuarios_de_servicios_financieros",
+      "type": "regulation",
+      "name": "Texto ordenado sobre Protección de los Usuarios de Servicios Financieros",
+      "aliases": [],
+      "description": "BCRA consolidated text on protection of users of financial services.",
+      "source": "com_a_8432"
+    },
+    {
+      "id": "texto_ordenado_sobre_prevencion_del_lavado_de_activos_del_financiamiento_del_terrorismo_y_otras_actividades_ilicitas",
+      "type": "regulation",
+      "name": "Texto ordenado sobre Prevención del Lavado de Activos, del Financiamiento del Terrorismo y Otras Actividades Ilícitas",
+      "aliases": [],
+      "description": "BCRA consolidated text on AML/CFT and other illicit activities applicable to PSPs that are obligated subjects before the UIF.",
+      "source": "com_a_8432"
+    },
+    {
+      "id": "cuenta_de_pago",
+      "type": "concept",
+      "name": "Cuenta de Pago",
+      "aliases": [],
+      "description": "Payment account offered by PSPCPs.",
+      "source": "com_a_8432"
+    },
+    {
+      "id": "billetera_digital_interoperable",
+      "type": "concept",
+      "name": "Billetera digital interoperable",
+      "aliases": [],
+      "description": "Interoperable digital wallet service eventually offered alongside payment accounts.",
+      "source": "com_a_8432"
+    },
+    {
+      "id": "oficial_de_cumplimiento",
+      "type": "concept",
+      "name": "Oficial de Cumplimiento",
+      "aliases": [],
+      "description": "Compliance officer (titular and alternate) before the UIF whose identity must be informed at PSP registration.",
+      "source": "com_a_8432"
+    },
+    {
+      "id": "persona_expuesta_politicamente",
+      "type": "concept",
+      "name": "Persona Expuesta Políticamente",
+      "aliases": [],
+      "description": "Politically exposed person status under UIF regulations, subject of a sworn declaration.",
+      "source": "com_a_8432"
+    },
+    {
+      "id": "banco_patrocinante",
+      "type": "concept",
+      "name": "Banco patrocinante",
+      "aliases": [],
+      "description": "Sponsor bank(s) that PSPCPs must declare in their operational and commercial description.",
+      "source": "com_a_8432"
+    },
+    {
+      "id": "incorporacion_digital",
+      "type": "concept",
+      "name": "Incorporación digital",
+      "aliases": [
+        "onboarding"
+      ],
+      "description": "Digital client onboarding subject to BCRA rules.",
+      "source": "com_a_8432"
     }
   ],
   "relations": [
-    {"subject": "psp", "predicate": "regulated_by", "object": "bcra"},
-    {"subject": "psp", "predicate": "must_register_in", "object": "rpsp"},
-    {"subject": "pspcp", "predicate": "is_subtype_of", "object": "psp"},
-    {"subject": "rpsp", "predicate": "managed_by", "object": "bcra"}
+    {
+      "subject": "psp",
+      "predicate": "regulated_by",
+      "object": "bcra",
+      "source": "seed"
+    },
+    {
+      "subject": "psp",
+      "predicate": "must_register_in",
+      "object": "rpsp",
+      "source": "seed"
+    },
+    {
+      "subject": "pspcp",
+      "predicate": "is_subtype_of",
+      "object": "psp",
+      "source": "seed"
+    },
+    {
+      "subject": "rpsp",
+      "predicate": "managed_by",
+      "object": "bcra",
+      "source": "seed"
+    },
+    {
+      "subject": "bcra",
+      "predicate": "issued",
+      "object": "texto_ordenado_sobre_proveedores_de_servicios_de_pago",
+      "source": "com_a_8432"
+    },
+    {
+      "subject": "bcra",
+      "predicate": "maintains",
+      "object": "rpsp",
+      "source": "com_a_8432"
+    },
+    {
+      "subject": "pspcp_como_servicio",
+      "predicate": "is_subtype_of",
+      "object": "pspcp",
+      "source": "com_a_8432"
+    },
+    {
+      "subject": "pspcp_como_servicio",
+      "predicate": "offers",
+      "object": "cuenta_de_pago",
+      "source": "com_a_8432"
+    },
+    {
+      "subject": "pspcp_como_servicio",
+      "predicate": "may_offer",
+      "object": "billetera_digital_interoperable",
+      "source": "com_a_8432"
+    },
+    {
+      "subject": "uif",
+      "predicate": "communicates_terrorism_financing_resolutions_to",
+      "object": "bcra",
+      "source": "com_a_8432"
+    },
+    {
+      "subject": "comite_del_consejo_de_seguridad_de_la_organizacion_de_las_naciones_unidas",
+      "predicate": "designates_persons_listed_in",
+      "object": "registro_publico_de_personas_y_entidades_vinculadas_a_actos_de_terrorismo_y_su_financiamiento",
+      "source": "com_a_8432"
+    },
+    {
+      "subject": "superintendencia_de_entidades_financieras_y_cambiarias",
+      "predicate": "hosts",
+      "object": "registro_de_auditores",
+      "source": "com_a_8432"
+    },
+    {
+      "subject": "psp",
+      "predicate": "subject_to_sanctions_by",
+      "object": "bcra",
+      "source": "com_a_8432"
+    },
+    {
+      "subject": "psp",
+      "predicate": "subject_to_sanctions_by",
+      "object": "uif",
+      "source": "com_a_8432"
+    },
+    {
+      "subject": "psp",
+      "predicate": "subject_to_sanctions_by",
+      "object": "comision_nacional_de_valores",
+      "source": "com_a_8432"
+    },
+    {
+      "subject": "psp",
+      "predicate": "subject_to_sanctions_by",
+      "object": "superintendencia_de_seguros_de_la_nacion",
+      "source": "com_a_8432"
+    },
+    {
+      "subject": "psp",
+      "predicate": "governed_by",
+      "object": "texto_ordenado_sobre_proveedores_de_servicios_de_pago",
+      "source": "com_a_8432"
+    },
+    {
+      "subject": "psp",
+      "predicate": "when_obligated_subjects_governed_by",
+      "object": "texto_ordenado_sobre_prevencion_del_lavado_de_activos_del_financiamiento_del_terrorismo_y_otras_actividades_ilicitas",
+      "source": "com_a_8432"
+    },
+    {
+      "subject": "pspcp_como_servicio",
+      "predicate": "must_comply_with",
+      "object": "texto_ordenado_sobre_proteccion_de_los_usuarios_de_servicios_financieros",
+      "source": "com_a_8432"
+    },
+    {
+      "subject": "psp",
+      "predicate": "must_comply_with",
+      "object": "ley_general_de_sociedades_19_550",
+      "source": "com_a_8432"
+    },
+    {
+      "subject": "psp",
+      "predicate": "disqualifications_set_by",
+      "object": "ley_de_entidades_financieras",
+      "source": "com_a_8432"
+    },
+    {
+      "subject": "texto_ordenado_sobre_proveedores_de_servicios_de_pago",
+      "predicate": "requires_digital_signature_under",
+      "object": "ley_25_506",
+      "source": "com_a_8432"
+    },
+    {
+      "subject": "bcra",
+      "predicate": "amended",
+      "object": "texto_ordenado_sobre_proveedores_de_servicios_de_pago",
+      "source": "com_a_8432"
+    },
+    {
+      "subject": "bcra",
+      "predicate": "amended",
+      "object": "texto_ordenado_sobre_sistema_nacional_de_pagos_servicios_de_pago",
+      "source": "com_a_8432"
+    }
   ],
-  "regulations": []
+  "regulations": [
+    {
+      "id": "com_a_8432",
+      "number": "A 8432",
+      "issuer": "bcra",
+      "date": "2026-04-30",
+      "summary": "Amends the BCRA's consolidated text on Payment Service Providers (PSP), introducing the new figure of 'PSPCP como Servicio' (PSP offering payment accounts as a service to clients of a third party), updating registration requirements, disqualifications for shareholders/directors, deregistration grounds, and AML/CFT obligations."
+    }
+  ],
+  "pending_review": []
 }

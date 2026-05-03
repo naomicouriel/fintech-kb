@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Environments
+.venv/
+.env
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+
+# Local debug artifacts
+kb_proposed.json
